@@ -1,3 +1,55 @@
+# Public Transport Database Project
+
+This project fetches and manages bus arrival information from the LTA DataMall API and stores it in a SQLITE/MongoDB database.
+## Features
+
+- **Bus Arrival Information:**
+  - Fetch real-time bus arrival information from the LTA DataMall API.
+  - Store the information in a MongoDB database, organized by service number, operation status, arrival status, estimated arrival time, and load information.
+
+- **User Interaction:**
+  - Allow users to add and delete favorite bus stops.
+  - Display a list of favorite bus stops.
+  - Fetch bus arrival information based on user input.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- SQLITE/MongoDB installed and running
+- Required Python packages (install using `pip install -r requirements.txt`)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/winter-client/INF2003_DB.git
+
+Navigate to project directory:
+cd INF2003_DB
+Install dependencies:
+pip install -r requirements.txt
+Run script:
+python sql.py/nosql.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================
 To remove file from Git repo
 =============================
 1.Remove the File Locally:
