@@ -1,0 +1,24 @@
+To remove file from Git repo
+=============================
+1.Remove the File Locally:
+
+git rm file_to_remove.txt
+# or, to keep it in the working directory
+git rm --cached file_to_remove.txt
+
+
+2. Commit the Removal:
+
+git commit -m "Remove file_to_remove.txt"
+
+
+3. Push the Changes:
+
+git push origin master
+
+
+Additional Notes:
+If you've already committed the file, removing it using git rm will mark it for deletion in the next commit.
+The --cached option in git rm --cached only removes the file from the staging area (index) and keeps it in your working directory. If you don't use --cached, it will remove the file from both the working directory and the staging area.
+If the file is already committed, removing it locally won't automatically remove it from a remote repository. You need to push the commit that removes the file to the remote repository.
+Be cautious when removing files, especially in shared repositories. Communicate with your collaborators to avoid potential conflicts.
